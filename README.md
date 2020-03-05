@@ -7,6 +7,6 @@ Tensor de cordones electrónico.
 
 ## Objetivos del trabajo
 
-El objetivo es conseguir crear un sistema electrónico capaz de tensar los cordones de unas zapatillas mediante una placa de arduino adherido a la parte psterior de unas zapatillas empleando sensores y motores de una manera automatica para ayudar a personas con movilidad reducida.
+El objetivo es conseguir crear un sistema electrónico capaz de tensar los cordones de unas zapatillas mediante una placa de arduino adherido a la parte posterior de unas zapatillas empleando sensores y motores de una manera automática para ayudar a personas con movilidad reducida.
 
 ## 
