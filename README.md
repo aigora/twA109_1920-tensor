@@ -1,5 +1,5 @@
 # Título del trabajo
-Tensor de coordones electrónico.
+Tensor de cordones electrónico.
 
 ## Integrantes del equipo
 
