@@ -3,7 +3,7 @@ Tensor de coordones mediante arduino adheriado a la parte psterior de unas zapat
 
 ## Integrantes del equipo
 
-Alvaro Rico Garcia(Alvarorico), Javier Robinat Cuiñas(javierrob) y Alejandro Serrano Valencia(
+Alvaro Rico Garcia(Alvarorico) 55425, Javier Robinat Cuiñas(javierrob) 55430 y Alejandro Serrano Valencia(alejandroserr) 55475.
 
 ## Objetivos del trabajo
-El objetivo es conseguir crear un sistema electrónico capaz de tensar los coordones de unas zapatillas
+El objetivo es conseguir crear un sistema electrónico capaz de tensar los cordones de unas zapatillas.
