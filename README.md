@@ -1,11 +1,9 @@
 # Título del trabajo
-
-Descripción breve del proyecto a realizar (2-3 frases).
+Tensor de coordones mediante arduino adheriado a la parte psterior de unas zapatillas empleando sensores y motores.
 
 ## Integrantes del equipo
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
+Alvaro Rico Garcia(Alvarorico), Javier Robinat Cuiñas(javierrob) y Alejandro Serrano Valencia(
 
 ## Objetivos del trabajo
-
-Lista de los objetivos que se persiguen con el trabajo propuesto.
+El objetivo es conseguir crear un sistema electrónico capaz de tensar los coordones de unas zapatillas
