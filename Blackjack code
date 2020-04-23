@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct
+{
+  int numero;
+  int palo;
+  int mazo; // 1 significa que está en el mazo y 0 que ya no está.
+} Carta;
+
+int main (void)
+{
+   Carta cartas[52];
+   int indice,numero;
+   int p, i;
+   
+
+
+//A continuación tendrías que inicializar las 52 cartas, por ejemplo
+  indice=0;
+  for (p=0;p<3;p++)  // Este bucle recorre los cuatro palos de la baraja 0=Picas,1=diamantes.....
+    for (numero=1;numero<=12;numero++) // Este bucle recorre cada carta del palo
+    {
+       cartas[indice].numero;
+       cartas[indice].palo=p;
+       cartas [indice].mazo=1;
+    } 
+
+}
+    
+int shuff(int cards[])
+{
+	int t;
+	int i;
+	int cartas[52];
+
+    for (i=0;i<52;i++)
+		cartas[i] = (i/13+3)*100 + i%13 + 1;
+
+	srand(time(NULL));
+	for (i=0;i<52;i++)
+	{
+		do
+		{
+		 t = rand() % 52;
+		} while (cartas[t] == 0);
+		cartas[i] = cartas[t];
+		cartas[t] = 0;
+	}
+	
+	return 0;
+}
