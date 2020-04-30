@@ -5,7 +5,7 @@ typedef struct
 {
   int numero;
   int palo;
-  int mazo; // 1 significa que está en el mazo y 0 que ya no está.
+  int mazo;
 } Carta;
 
 int main (void)
@@ -16,7 +16,7 @@ int main (void)
    
 
 
-//A continuación tendrías que inicializar las 52 cartas, por ejemplo
+
   indice=0;
   for (p=0;p<3;p++)  // Este bucle recorre los cuatro palos de la baraja 0=Picas,1=diamantes.....
     for (numero=1;numero<=12;numero++) // Este bucle recorre cada carta del palo
@@ -49,4 +49,82 @@ int shuff(int cards[])
 	}
 	
 	return 0;
+}
+int conversor_de_jkq(int a)
+{
+	if ((a%100==11) ||(a%100==12) ||(a%100==13)) 
+	  return (a/100)*100+10;
+	else 
+	  return a;
+}
+
+void elec(int num)
+{
+	char n;
+	int numero;
+	
+	n = num / 100;
+	numero = num % 100;
+	switch (numero)
+	{
+		case 1: 
+		{
+			printf("*******\n");
+			printf("*     *\n");
+			printf("* %c   *\n", n);
+			printf("*   A *\n");
+			printf("*     *\n");
+			printf("*******\n");
+			break;
+		}
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+		{
+			printf("*******\n");
+			printf("*     *\n");
+			printf("* %c   *\n", n);
+			printf("*  %2d *\n", numero);
+			printf("*     *\n");
+			printf("*******\n");
+			break;
+		}
+		case 11:
+		{
+			printf("*******\n");
+			printf("*     *\n");
+			printf("* %c   *\n", numero);
+			printf("*   J *\n");
+			printf("*     *\n");
+			printf("*******\n");
+			break;
+		}
+		case 12:
+		{
+			printf("*******\n");
+			printf("*     *\n");
+			printf("* %c   *\n", n);
+			printf("*   Q *\n");
+			printf("*     *\n");
+			printf("*******\n");
+			break;
+		}
+		case 13:
+		{
+			printf("*******\n");
+			printf("*     *\n");
+			printf("* %c   *\n", n);
+			printf("*   K *\n");
+			printf("*     *\n");
+			printf("*******\n");
+			break;
+		}
+
+	}
 }
