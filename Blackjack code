@@ -260,3 +260,32 @@ int play(void)
   break;
  }
  }
+ 
+ //las cartas del contricante
+
+ printf("Cartas del contrincante:\n");
+ pic(bcards[0]);
+ pic(bcards[1]);
+ if (bcards[0]%100 + bcards[1]%100 == 2)
+ {
+   sumabot=12; //two A cards
+   printf("Suma de las cartas del contrincante:%d\n\n", sumabot); 
+ }
+ else if ((convert_jkq(bcards[0]))%100 + (convert_jkq(bcards[1]))%100 ==1)
+ {
+  sumabot=21;
+  printf("Suma de las cartas del contrincante:%d\n\n", sumabot);
+  printf("GAME OVER!\n");
+  return 1;
+ }
+ else if (bcards[0]%100==1 || bcards[1]%100==1)
+ {
+  sumabot=(bcards[0]+bcards[1])%100+(rand()%2)*10;
+  printf("Suma de las cartas del contrincante:%d\n\n", sumabot);
+ }
+ else
+ {
+  sumabot = (convert_jkq(bcards[0]))%100 + (convert_jkq(bcards[1]))%100;
+  printf("Suma de las cartas del contrincante:%d\n\n", sumabot);
+ }
+
